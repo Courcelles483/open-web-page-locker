@@ -1,4 +1,4 @@
-**   ## open-web-page-locker
+## open-web-page-locker
 Le version acteulle n'est pas términer donc acune doumenation est disponible 
 
 Cliker ici pour les version publier 

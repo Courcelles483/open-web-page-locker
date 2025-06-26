@@ -1,3 +1,8 @@
+> [!CAUTION]
+> Le script s'exécute en local, mais il n'est pas prêt : en raison de son développement, aucun système de chiffrement n’a été ajouté, ce qui comporte des risques de sécurité.
+---
+# Open Web Page Locker
+
 Open Web Page Locker est un système de verrouillage de pages web par mot de passe.
 Cette version est conçue pour une utilisation locale uniquement, à des fins de test ou d’apprentissage.
 Elle utilise un serveur Node.js simple.
@@ -66,7 +71,41 @@ node server.js
 ```
 Puis appuie sur **Entrée**.  
 Cela démarre ton serveur.
-```
+
 
 ### 🛑 Arrêter le serveur
-* Méthode 2 : Fermez simplement la fenêtre du terminal
+Fermez simplement la fenêtre du terminal.
+
+## 🔧 Personnalisation du système
+
+Pour personnaliser ton système, il suffit d’éditer deux fichiers situés à la racine de ton projet et de modifier la valeur en question :
+
+Tu as deux fichiers :
+- `config.json`
+- `admin.json`
+
+
+### 🛠️ config.json
+
+Comme son nom l’indique, ce fichier sert à la configuration : il permet de définir le temps de blocage et le nombre d’essais.
+admin.json
+```
+{
+  "PASSWORD": "tonMotDePasse",            // ← mot de passe maître
+  "ENABLE_BLOCKING": true,                // ← activer le blocage après erreurs
+  "MAX_ATTEMPTS_SHORT_LOCK": 3,           // ← nombre d’échecs avant verrou court
+  "MAX_TOTAL_ATTEMPTS_BAN": 15,           // ← nombre total d’échecs avant blocage du système
+  "SHORT_LOCK_DURATION": 300000,          // ← durée verrou court (ms)
+  "LONG_LOCK_DURATION": 900000            // ← durée verrou long (ms)
+}
+```
+### 🔒 admin.json
+
+Ce fichier sert à la gestion du blocage du système :
+```
+{
+  "attempts": 0,      // ← compteur d’échecs depuis la dernière réussite
+  "lockUntil": 0,     // ← timestamp (ms) jusqu’à la fin du verrouillage (remettre à zéro pour débloquer)
+  "banned": false     // ← true si l’utilisateur est définitivement banni
+}
+```

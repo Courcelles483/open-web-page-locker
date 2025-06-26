@@ -1,4 +1,3 @@
-# 🔐 open web page locker v0.2
 Open Web Page Locker est un système de verrouillage de pages web par mot de passe.
 Cette version est conçue pour une utilisation locale uniquement, à des fins de test ou d’apprentissage.
 Elle utilise un serveur Node.js simple.
@@ -15,6 +14,14 @@ Si ce nombre est dépassé, **le verrouillage s’applique à tout le monde** ju
 ### 🐞 Corrections de bugs
 
 * Vide
+
+### 📌 Objectifs pour la prochaine version
+
+- 🔒 Empêcher l'accès direct à la page HTML `unlock.html`
+- ⏱️ Utiliser un temps en **secondes** au lieu de **millisecondes**
+- 🧭 Ajouter un **menu de gestion** intégré à l'interface
+- 🎨 Améliorer l'apparence HTML (design plus moderne)
+- 🐛  Tester si le code ne bugue pas avec un changement de port pour la redirection vers unlock.html
 
 ## ⚙️ Exécution du projet
 

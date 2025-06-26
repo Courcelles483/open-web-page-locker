@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>🔐 Accès restreint</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
+    input { padding: 10px; font-size: 16px; width: 250px; margin-bottom: 10px; }
+    button { padding: 10px 20px; font-size: 16px; }
+    #lockedMessage, #bannedMessage { color: red; font-weight: bold; display: none; margin-top: 20px; }
+  </style>
+  <script src="/index.js"></script>
+</head>
+<body>
+  <h1>Page protégée</h1>
+  <div id="loginSection">
+    <input type="password" id="passwordInput" placeholder="Mot de passe" />
+    <br>
+    <button onclick="envoyer()">Déverrouiller</button>
+    <p id="errorMsg" style="color:red;"></p>
+  </div>
+  <div id="lockedMessage"><p id="countdownText"></p></div>
+  <div id="bannedMessage">🚫 Vous êtes banni</div>
+</body>
+</html>

@@ -7,7 +7,7 @@ Cette version du projet est conçue pour une utilisation locale uniquement, sans
 ### ✏️ Ajouts/Modifications
 1. Le système de blocage des tentatives est global :  
 le nombre maximal d’essais est comptabilisé pour **tous les utilisateurs**.  
-Si ce nombre est dépassé, **le verrouillage s’applique à tout le monde** jusqu’à la levée du blocage. 
+Si ce nombre est dépassé, **le verrouillage s’applique à tout le monde** jusqu’à la levée du blocage.
 
 
 
@@ -23,6 +23,7 @@ Si ce nombre est dépassé, **le verrouillage s’applique à tout le monde** ju
 - 🎨 Améliorer l'apparence HTML (design plus moderne)
 - 🐛 Tester si le code ne bugue pas avec un changement de port pour la redirection vers unlock.html
 - 🔄 Faire en sorte que le serveur vérifie régulièrement pour bloquer les requêtes, dans le cas où le verrouillage est activé. (car si un autre rate sa le blocker sa se mettre a jours pour touts et que perosne)
+- 👨🏼‍💻Mofier la confige et blockge par cmd (et les image de fond)
 
 ## ⚙️ Exécution du projet
 

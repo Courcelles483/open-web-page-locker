@@ -21,7 +21,8 @@ Si ce nombre est dépassé, **le verrouillage s’applique à tout le monde** ju
 - ⏱️ Utiliser un temps en **secondes** au lieu de **millisecondes**
 - 🧭 Ajouter un **menu de gestion** intégré à l'interface
 - 🎨 Améliorer l'apparence HTML (design plus moderne)
-- 🐛  Tester si le code ne bugue pas avec un changement de port pour la redirection vers unlock.html
+- 🐛 Tester si le code ne bugue pas avec un changement de port pour la redirection vers unlock.html
+- 🔄 Faire en sorte que le serveur vérifie régulièrement pour bloquer les requêtes, dans le cas où le verrouillage est activé. (car si un autre rate sa le blocker sa se mettre a jours pour touts et que perosne)
 
 ## ⚙️ Exécution du projet
 
